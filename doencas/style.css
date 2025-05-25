@@ -1,0 +1,143 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #cee8e2;
+    }
+
+    header {
+        background-color: #117392;
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 25px;
+    }
+
+    /*Logo*/
+    .logo {
+        width: 200px;
+        margin-left: 25px;
+        display: flex;
+    }
+
+    /*Organização da lista do header*/
+    .list-bar {
+        width: auto;
+        list-style: none;
+        gap: 30px;
+        display: flex;
+        font-size: 20px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    /*Animação do hover*/
+    .list-bar li {
+    position: relative;
+}
+
+    .list-bar li::after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: white;
+        transition: width 0.5s ease;
+}
+
+    .list-bar li:hover::after {
+    width: 100%;
+}
+
+    /*Restante do conteúdo relacionado a header*/
+    .txt-header {
+        color: #FFF;
+    }
+
+    .txt-header {
+        display: contents;
+    }
+
+    /*Centralizador do texto sobre main*/
+    .txt-main {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 30px;
+        color: #117392;
+    }
+
+        .container {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin-left: 25px;
+        margin-right: 25px;
+        width: auto;
+        height: auto;
+        padding: 40px;
+        border-radius: 20px;
+    }
+
+        .area-primary {
+        display: flex;
+        gap: 30px;
+        height: auto;
+    }
+
+
+        .main-content {
+        background-color: #fdfaf3;
+        padding: 30px;
+        border-radius: 20px;
+        flex: 1;
+        font-family: Arial, sans-serif;
+    }
+
+    .main-content p {
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+
+    .main-content h1 {
+        color: #006b8f;
+        text-align: center;
+    }
+
+    .main-content h2 {
+        color: #006b8f;
+        margin-left: 15px;
+    }
+
+    /*Saiba mais*/
+    .more-info {
+        color: #006b8f;
+        text-decoration: none;
+        font-weight: bold;;
+    }
+
+    .more-info:hover {
+        text-decoration: underline;
+        color: #109375;
+    }
+
+    .more-info::after {
+        color: #006b8f;
+        text-decoration: none;
+    }
+
+        /* Footer */
+    .conteudo-footer {
+        background-color: #2a2e31;
+        color: #ffffff;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }

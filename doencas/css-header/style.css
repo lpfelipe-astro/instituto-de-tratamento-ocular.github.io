@@ -1,0 +1,71 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #cee8e2;
+    }
+
+    header {
+        background-color: #117392;
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 25px;
+    }
+
+    /*Logo*/
+    .logo {
+        width: 200px;
+        margin-left: 25px;
+        display: flex;
+    }
+
+    /*Organização da lista do header*/
+    .list-bar {
+        width: auto;
+        list-style: none;
+        gap: 30px;
+        display: flex;
+        font-size: 20px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    /*Animação do hover no Header*/
+    .list-bar li {
+    position: relative;
+}
+
+    .list-bar li::after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: white;
+        transition: width 0.5s ease;
+}
+
+    .list-bar li:hover::after {
+    width: 100%;
+}
+
+    /*Restante do conteúdo relacionado a header*/
+    .txt-header {
+        color: #FFF;
+    }
+
+    .txt-header {
+        display: contents;
+    }
+
+    /*Banner do site*/
+    .img-banner {
+        width: 100%;
+        height: 170px;
+    }
